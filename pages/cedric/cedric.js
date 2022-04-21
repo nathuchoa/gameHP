@@ -4,16 +4,16 @@ function validarRespostaNinfadoraFase1(respostaCerta, msg) {
     var resposta = prompt("Digite sua resposta", "1, 2 ou 3?");
     if (resposta === respostaCerta) {
       alert("Nossa aventura continua!");
-      location.assign("./ninfadora-fase2.html")
+      location.assign("ninfadora-fase2.html");
       break;
-    } else if (resposta === 1){
-      if (contador>=2){
+    } else if (resposta === 1) {
+      if (contador >= 2) {
         alert("Bagman não teria apostado...");
-        location.assign('./game-over-ninfadora.html')
+        location.assign("game-over-ninfadora.html");
         break;
-      }else{
-        alert('Hmmm... não estou sei se seguimos pelo caminho correto...')
-        location.assign('./ninfadora-fase3.html')
+      } else {
+        alert("Hmmm... não estou sei se seguimos pelo caminho correto...");
+        location.assign("ninfadora-fase3.html");
       }
     }
   }
