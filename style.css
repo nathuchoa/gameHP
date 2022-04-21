@@ -44,7 +44,7 @@ body {
       rgba(53, 43, 23, 0.8),
       rgba(253, 221, 78, 0.8)
     ),
-    url(/img/bg-lufalufa.jpg);
+    url(./img/bg-lufalufa.jpg);
   background-color: var(--cor-4);
   background-attachment: fixed;
   background-size: cover;
