@@ -96,7 +96,7 @@ p {
   font-family: "Courgette-Regular.ttf";
   color: var(--cor-5);
   font-weight: 500;
-  background-color: rgb(253, 221, 76, 0.2);
+  background-color: rgb(253, 221, 76, 0.4);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -150,7 +150,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap:20px;
 }
 
