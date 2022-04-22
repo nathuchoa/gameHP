@@ -24,7 +24,6 @@ body {
   --cor-6: #f2f2f2;
 }
 
-
 /* ADICIONANDO FONTES*/
 
 @font-face {
@@ -36,27 +35,92 @@ body {
   src: url(./fonts/Courgette-Regular.ttf);
 }
 
-/* BG - PADRÃO */
-
-body {
+/* BACKGROUND DAS PÁGINAS */
+.bg-capa {
   background-image: linear-gradient(
       to top,
       rgba(53, 43, 23, 0.8),
       rgba(253, 221, 78, 0.8)
     ),
     url(./img/bg-lufalufa.jpg);
-  background-color: var(--cor-4);
+}
+
+.bg-personagens {
+  background-image: linear-gradient(
+    to top,
+    rgba(53, 43, 23, 0.8),
+    rgba(253, 221, 78, 0.8)
+  ),
+  url(./img/bg-quadros.jpg);
+}
+
+.bg-newt {
+  background-image: linear-gradient(
+      to top,
+      rgba(53, 43, 23, 0.8),
+      rgba(253, 221, 78, 0.8)
+    ),
+    url(./img/bg-newt.jpg);
+}
+.bg-ninfadora{
+background-image: linear-gradient(
+  to top,
+  rgba(53, 43, 23, 0.8),
+  rgba(253, 221, 78, 0.8)
+),
+url(./img/bg-ninfadora.jpg);
+}
+
+.bg-cedric{
+  background-image: linear-gradient(
+    to top,
+    rgba(53, 43, 23, 0.8),
+    rgba(253, 221, 78, 0.8)
+  ),
+  url(./img/bg-cedric.jpg);
+}
+
+.bg-gameover{
+  background-image: linear-gradient(
+    to top,
+    rgba(53, 43, 23, 0.8),
+    rgba(253, 221, 78, 0.8)
+  ),
+  url(./img/bg-carta.jpg);
+}
+
+.bg-final{
+  background-image: linear-gradient(
+    to top,
+    rgba(53, 43, 23, 0.8),
+    rgba(253, 221, 78, 0.8)
+  ),
+  url(./img/bg-castelos.jpg);
+}
+
+
+body {
   background-attachment: fixed;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 /* FORMATAÇÃO BÁSICA */
 
-section, main, h1 {
-  max-width: 50%;
+section,
+main {
+  max-width: 70%;
   margin: auto;
+  margin-bottom: 20px;
+  background-color: rgb(253, 221, 76, 0.4);
+  padding: 20px;
+  border: 4px solid var(--cor-3);
+  border-radius: 20px;
+}
+
+section {
+  margin-bottom: 100px;
 }
 
 /* FORMATAÇÃO DOS TEXTOS */
@@ -81,11 +145,11 @@ h2 {
 h3 {
   font-family: "Trebuchet MS";
   font-size: 1.2rem;
-  color: var(--cor-2);
+  color: var(--cor-4);
   margin-bottom: 10px;
 }
 
-h4{
+h4 {
   font-family: "Trebuchet MS";
   font-size: 1rem;
   color: var(--cor-4);
@@ -96,16 +160,7 @@ p {
   font-family: "Courgette-Regular.ttf";
   color: var(--cor-5);
   font-weight: 500;
-  background-color: rgb(253, 221, 76, 0.4);
-  padding: 20px;
-  border-radius: 10px;
   margin-bottom: 30px;
-}
-
-ol{
-  background-color: rgb(253, 221, 76, 0.2);
-  padding: 20px;
-  border-radius: 10px;
 }
 
 li {
@@ -136,13 +191,12 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .botao:hover {
   background-color: var(--cor-6);
 }
-
 
 /* PÁGINA - ESCOLHA DE PERSONAGENS */
 
@@ -151,7 +205,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap:20px;
+  gap: 20px;
 }
 
 .personagens {
@@ -171,15 +225,14 @@ li {
   text-align: justify;
 }
 
-img{
+img {
   margin-bottom: 30px;
 }
 
-img:hover{
+img:hover {
   height: 230px;
   margin-bottom: 0;
 }
-
 
 /* FORMATAÇÃO DO FOOTER */
 
@@ -188,7 +241,7 @@ footer p {
   font-size: 0.7rem;
   color: var(--cor-2);
   text-align: center;
-  background-color:var(--cor-5);
+  background-color: var(--cor-5);
   padding-top: 10px;
   margin-bottom: 0;
 }
@@ -196,19 +249,19 @@ footer p {
 footer {
   width: 100%;
   background-color: var(--cor-5);
-  position:fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
 
 /* RESPONSIVIDADE */
 
-@media (max-width:400px){
-  h1{
-        font-size: 3rem;
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
   }
 
-  .escolha-os-personagens{
-    gap: 10px
+  .escolha-os-personagens {
+    gap: 10px;
   }
 }
