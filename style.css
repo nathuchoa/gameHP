@@ -55,7 +55,7 @@ body {
 /* FORMATAÇÃO BÁSICA */
 
 section, main, h1 {
-  max-width: 60%;
+  max-width: 50%;
   margin: auto;
 }
 
@@ -132,14 +132,14 @@ li {
   min-width: 90px;
 }
 
-.botoes-div{
+.botoes-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.botao:hover{
+.botao:hover {
   background-color: var(--cor-6);
 }
 
@@ -154,7 +154,7 @@ li {
   gap:20px;
 }
 
-.personagens{
+.personagens {
   display: flex;
   flex-direction: column;
   max-width: 250px;
@@ -167,7 +167,7 @@ li {
   text-decoration: none;
 }
 
-.personagens p{
+.personagens p {
   text-align: justify;
 }
 
