@@ -51,7 +51,7 @@ function validarRespostaNinfadoraFase3(respostaCerta) {
     var resposta = prompt("Digite sua resposta", "1, 2 ou 3?");
 
     if (resposta === respostaCerta) {
-      alert("Nossa aventura continua!");
+      alert("Pelas barbas de Merlim! Parece que conseguimos!");
       location.assign("../final-vencedor.html");
       break;
     } else if (resposta === "3"){
