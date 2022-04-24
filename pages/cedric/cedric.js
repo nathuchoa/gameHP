@@ -66,7 +66,7 @@ function validarRespostaCedricFase3(respostaCerta) {
 
 //FASE - EXTRA - CAMINHO LONGO//
 
-function validarRespostacedricFaseExtra(respostaCerta) {
+function validarRespostaCedricFaseExtra(respostaCerta) {
   while (true) {
     var resposta = prompt("Digite sua resposta", "1, 2 ou 3?");
 
